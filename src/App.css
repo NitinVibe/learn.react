@@ -1,0 +1,56 @@
+form {
+  display: flex; 
+  flex-direction: column; 
+  align-items: center; 
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 8px; 
+  margin: 20px auto;
+  width: 400px; 
+  background-color: #f9f9f9;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
+
+.container {
+  display: flex; 
+  flex-direction: column;
+  gap: 15px; 
+  width: 100%; /* Make the container take full width of the form */
+  margin-bottom: 20px; /* Add some space before the button */
+}
+
+/* Styling for each input field div */
+.container > div {
+  width: 100%; /* Make each input group take full width of the container */
+}
+
+/* Styling for the input fields themselves */
+input[type="text"],
+input[type="number"] {
+  width: calc(100% - 20px); /* Make input take full width minus padding */
+  padding: 10px;
+  border: 1px solid #ddd; /* Light gray border */
+  border-radius: 4px; /* Slightly rounded corners */
+  font-size: 16px;
+}
+
+/* Styling for the input field placeholder text */
+input::placeholder {
+  color: #aaa;
+}
+
+/* Styling for the submit button */
+button[type="submit"] {
+  background-color: #007bff; /* Blue background */
+  color: white; /* White text */
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 18px;
+  transition: background-color 0.3s ease; /* Smooth transition for hover effect */
+}
+
+/* Hover effect for the submit button */
+button[type="submit"]:hover {
+  background-color: #0056b3; /* Darker blue on hover */
+}
